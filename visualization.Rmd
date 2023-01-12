@@ -1,5 +1,5 @@
 ---
-title: "datares visualization testing"
+title: "datares visualization"
 author: "Emma Chi"
 date: "2022-11-20"
 output: pdf_document
@@ -125,7 +125,7 @@ gfg <- gfg[ , 2:ncol(gfg)]
 colnames(gfg) <- time.period
 gfg <- as.matrix(gfg)
 
-color <- colorRampPalette(colors = c("brown", "yellow"))(5)
+color <- colorRampPalette(colors = c("red", "yellow"))(5)
 
 # Create grouped barplot
 barplot(height = gfg,beside = TRUE, ylim = c(0,1), xlab = "Time Period", ylab = "Proportion", 
